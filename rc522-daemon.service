@@ -4,8 +4,8 @@ After = network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/env python3 /opt/scripts/rfid/readRFID.py
-WorkingDirectory=/opt/scripts/rfid
+ExecStart=/usr/bin/env python3 /opt/scripts/rc522-mqtt/readRFID.py
+WorkingDirectory=/opt/scripts/rc522-mqtt
 TimeoutStartSec=120
 TimeoutStopSec=30
 Restart=always
