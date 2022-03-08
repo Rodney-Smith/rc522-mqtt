@@ -88,7 +88,7 @@ def getConfig():
 
 def rfid_read(reader):
     uid_str = None
-    LOG("Waiting for tag")
+    LOG("Waiting to read tag")
     reader.wait_for_tag()
     LOG("Found")
     (error, data) = reader.request()
@@ -99,9 +99,9 @@ def rfid_read(reader):
             uid_str = ".".join(str(e) for e in uid)
             LOG("Card UID: " + uid_str)
         else:
-            LOG("Error in anticoll")
+            LOG("Error in Anti-collision")
     else:
-        LOG("Error in request")
+        LOG("Error in Request")
 
     return uid_str
 
@@ -136,7 +136,7 @@ def main():
                 time.sleep(0.1)
                 last_time = time.time()
     except KeyboardInterrupt:
-        LOG("KeyboardInterrupt")
+        LOG("Keyboard Interrupt Received")
     finally:
         reader.cleanup()
         client.publish(
