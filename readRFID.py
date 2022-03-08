@@ -5,8 +5,6 @@ import socket
 import sys
 import time
 
-#import RPi.GPIO as gpio
-#from mfrc522 import SimpleMFRC522
 from pirc522 import RFID
 import paho.mqtt.client as mqtt
 
