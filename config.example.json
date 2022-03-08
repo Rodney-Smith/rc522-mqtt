@@ -1,0 +1,11 @@
+{
+    "mqtt": {
+        "clientid":"unique-id",
+        "topic":"linux/temperature",
+        "broker":"mqttbroker.local",
+        "broker": "machinename_or_IP",
+        "port": 1883,
+        "user":"mqttusername",
+        "password":"mqttpassword"
+    }
+}

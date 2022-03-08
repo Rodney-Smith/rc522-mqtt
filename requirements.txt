@@ -1,0 +1,7 @@
+###### Requirements without Version Specifiers ######`
+spidev
+mfrc522
+pi-rc522                       # RFID Library
+
+###### Requirements with Version Specifiers ######`
+paho-mqtt >= 1.5.1             # Version must be at least version 1.5.1
